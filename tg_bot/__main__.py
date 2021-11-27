@@ -49,7 +49,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
+TECHNO_IMG = "https://telegra.ph/shayari_jok"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -58,7 +58,7 @@ USER_INFO = []
 DATA_IMPORT = []
 DATA_EXPORT = []
 
-CHAT_SETTINGS = {}
+CHAT_SETTINGS = {https://t.me/shayari_jok}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
@@ -112,14 +112,14 @@ def test(bot: Bot, update: Update):
     # pprint(eval(str(update)))
     # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
-    print(update.effective_message)
+    print(update.shayari_jok)
 
-@run_async
+@shayari_jok
 def start(bot: Bot, update: Update, args: List[str]):
-    if update.effective_chat.type == "private":
+    if update.https://t.me/shayari_jok.type == "private":
         if len(args) >= 1:
             if args[0].lower() == "help":
-                send_help(update.effective_chat.id, HELP_STRINGS)
+                send_help(update.shayari_jok.id, HELP_STRINGS)
             elif args[0].lower() == "disasters":
                 IMPORTED["disasters"].send_disasters(update)
             elif args[0].lower().startswith("stngs_"):
